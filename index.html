@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="Garden">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="app.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="index.css">
+        <title>Garden Simulator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div ng-controller="GardenCtrl as garden">
+            <!-- Hello, this is our garden.<br>
+            We need to:<br>
+            + display a plant <br>
+            + see if the plant needs water <br>
+            + be able to water the plant<br>
+            - plant changing it's watered status depending on time -->
+            <div class="plant-container">
+                <div ng-if="!garden.plant.watered" class="arrow_box">
+                    💧
+                </div>
+                <div class="plant">
+                    🌱
+                </div>
+            </div>
+            <button ng-click="garden.waterPlant()">
+                water the plant
+            </button>
+        </div>
+    </body>
+</html>
