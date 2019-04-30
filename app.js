@@ -6,7 +6,7 @@
     function GardenCtrl($interval){
         var garden = this;
         garden.plant = {
-            watered: true,
+            watered: false,
             lastWatered: new Date()
         }
         garden.changeWateredStatus = function(){

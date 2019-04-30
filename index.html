@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div ng-controller="GardenCtrl as garden">
+        <div ng-controller="GardenCtrl as garden" class="scene">
             <!-- Hello, this is our garden.<br>
             We need to:<br>
             + display a plant <br>
@@ -25,9 +25,11 @@
                     🌱
                 </div>
             </div>
-            <button ng-click="garden.waterPlant()">
-                water the plant
-            </button>
+            <div class="ground">
+                <button ng-click="garden.waterPlant()">
+                    water the plant
+                </button>
+            </div>
         </div>
     </body>
 </html>
